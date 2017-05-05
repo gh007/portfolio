@@ -1,0 +1,69 @@
+.intro {
+    position: relative;
+    &__header-background-image {
+        max-height: 520px;
+        width: 100vw;
+    }
+    
+    &__text-image-content {
+        position: absolute;
+        background-color: ;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    &__text-image-content img {
+        border-radius: 50%;
+    }
+    
+}
+
+.intro h1 {
+    margin-bottom: 1em;
+    font-size: 5.5em;
+    text-align: center;
+    color: rgba(245, 221, 187, 0.99);
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    line-height: .8em;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgba(245, 221, 187, 0.99);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 1.6em;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: proxima-nova, sans-serif;
+}
+
+
+
+p {
+    color: #f5d8b1;
+}
+
+.about-me {
+    padding: 2% 0%;
+}
+
+.about-me p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgb(87, 96, 105);
+    letter-spacing: .03;
+    margin: 10px auto;
+    font-size: 1.4em;
+    padding: 2% 0;
+}
