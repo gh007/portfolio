@@ -22,35 +22,26 @@
 }
 
 .intro h1 {
-    margin-bottom: 1em;
-    font-size: 5.5em;
+    margin-bottom: 6.5rem;
+    font-size: 5.5rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     font-weight: 900;
-    line-height: .8em;
+    line-height: .8rem;
+    text-shadow: 3px 3px 0 rgba(0,0,0, .5)
 }
 
 .intro h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
     font-weight: 400;
     text-transform: capitalize;
-    margin-top: 1.6em;
+    margin-bottom: 19.6rem;
+    text-shadow: 2px 2px 0 rgba(0,0,0, .3)
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: proxima-nova, sans-serif;
-}
-
-
-
-p {
-    color: #f5d8b1;
-}
 
 .about-me {
     padding: 2% 0%;
@@ -58,12 +49,13 @@ p {
 
 .about-me p {
     font-family: proxima-nova, sans-serif;
+    color: #f5d8b1;
     font-style: normal;
     font-weight: 300;
     line-height: 1.6;
     color: rgb(87, 96, 105);
     letter-spacing: .03;
     margin: 10px auto;
-    font-size: 1.4em;
-    padding: 2% 0;
+    font-size: 1.5rem;
+    padding: 1% 0;
 }

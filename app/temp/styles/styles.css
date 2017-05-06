@@ -427,10 +427,17 @@ template {
 }
 
 body{
+    
     font-family: 'Roboto', sans-serif;
     color: #333;
     
     
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: proxima-nova, sans-serif;
 }
 
 img {
@@ -630,7 +637,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/paint.jpg);
+    url(../images/);
 }
 
 .box-img-2 { 
@@ -640,7 +647,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/soap.jpg);
+    url(../images/);
 }
 
 .box-img-3 { 
@@ -650,7 +657,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/flower.jpg);
+    url(../images/);
 }
 
 .box-img-4 { 
@@ -660,7 +667,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/feather.jpg);
+    url(../images/);
 }
 
 .box-info {
@@ -695,7 +702,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/paint.jpg);
+    url(../);
 }
 
 .box-img-2 { 
@@ -705,7 +712,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/soap.jpg);
+    url(../);
 }
 
 .box-img-3 { 
@@ -715,7 +722,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/flower.jpg);
+    url(../);
 }
 
 .box-img-4 { 
@@ -725,7 +732,7 @@ to {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/feather.jpg);
+    url(../);
 }
 
 .box-info {
@@ -753,8 +760,8 @@ to {
 	line-height:2;
 }
 
-header {
-    background-color: ;
+p {
+    
 }
 
 .intro {
@@ -783,32 +790,24 @@ header {
 }
 
 .intro h1 {
-    margin-bottom: 1em;
-    font-size: 5.5em;
+    margin-bottom: 6.5rem;
+    font-size: 5.5rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     font-weight: 900;
-    line-height: .8em;
+    line-height: .8rem;
+    text-shadow: 3px 3px 0 rgba(0,0,0, .5)
 }
 
 .intro h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
     font-weight: 400;
     text-transform: capitalize;
-    margin-top: 1.6em;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: proxima-nova, sans-serif;
-}
-
-p {
-    color: #f5d8b1;
+    margin-bottom: 19.6rem;
+    text-shadow: 2px 2px 0 rgba(0,0,0, .3)
 }
 
 .about-me {
@@ -817,14 +816,19 @@ p {
 
 .about-me p {
     font-family: proxima-nova, sans-serif;
+    color: #f5d8b1;
     font-style: normal;
     font-weight: 300;
     line-height: 1.6;
     color: rgb(87, 96, 105);
     letter-spacing: .03;
     margin: 10px auto;
-    font-size: 1.4em;
-    padding: 2% 0;
+    font-size: 1.5rem;
+    padding: 1% 0;
+}
+
+p{
+    
 }
  
   

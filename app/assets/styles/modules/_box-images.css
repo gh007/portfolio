@@ -84,7 +84,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/paint.jpg);
+    url(../images/);
 }
 
 .box-img-2 { 
@@ -94,7 +94,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/soap.jpg);
+    url(../images/);
 }
 
 .box-img-3 { 
@@ -104,7 +104,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/flower.jpg);
+    url(../images/);
 }
 
 .box-img-4 { 
@@ -114,7 +114,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/feather.jpg);
+    url(../images/);
 }
 
 .box-info {
@@ -149,7 +149,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/paint.jpg);
+    url(../);
 }
  
 .box-img-2 { 
@@ -159,7 +159,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/soap.jpg);
+    url(../);
 }
  
 .box-img-3 { 
@@ -169,7 +169,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/flower.jpg);
+    url(../);
 }
  
 .box-img-4 { 
@@ -179,7 +179,7 @@
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../images/feather.jpg);
+    url(../);
 }
  
 .box-info {
