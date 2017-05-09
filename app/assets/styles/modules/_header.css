@@ -1,61 +1,76 @@
+
+
 .intro {
     position: relative;
-    &__header-background-image {
-        max-height: 520px;
-        width: 100vw;
-    }
+    border-bottom: 10px solid $mainCream;
     
-    &__text-image-content {
-        position: absolute;
-        background-color: ;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
+    &__laptop-image {
+        background: url(../../../assets/images/laptop.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
         width: 100%;
-        text-align: center;
+        height: 30em;
+        margin: 0 auto;
+        z-index: -2;
+        background-color: firebrick;
+             
     }
     
-    &__text-image-content img {
-        border-radius: 50%;
-    }
-    
-}
-
 .intro h1 {
-    margin-bottom: 6.5rem;
-    font-size: 5.5rem;
+    position: absolute;
+    font-size: 1.2rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
     letter-spacing: 0.1rem;
     font-weight: 900;
-    line-height: .8rem;
-    text-shadow: 3px 3px 0 rgba(0,0,0, .5)
+    line-height: .1rem;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, .5);
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 15.7em;
+    
+    @mixin atSmall {
+        font-size: 2.4rem;
+        top: 7.1em;
+    }
+    @mixin atMedium {
+        font-size: 2.9rem;
+        top: 6.1em;
+    }
+    @mixin atLarge {
+        font-size: 4.9rem;
+        top: 2.9em;
+    }
 }
 
 .intro h2 {
-    font-size: 2.5rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    font-size: 1.0rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
     font-weight: 400;
     text-transform: capitalize;
-    margin-bottom: 19.6rem;
-    text-shadow: 2px 2px 0 rgba(0,0,0, .3)
+    margin-top: .1rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+    top: 21.2em;
+    
+    @mixin atSmall {
+        font-size: 2.2rem;
+        top: 10.7em;
+    }
+    @mixin atMedium {
+        font-size: 2.5rem;
+        top: 9.7em;
+    }
+    @mixin atLarge {
+        font-size: 3.0rem;
+        top: 7.8em;
+    }
+}
 }
 
 
-.about-me {
-    padding: 2% 0%;
-}
 
-.about-me p {
-    font-family: proxima-nova, sans-serif;
-    color: #f5d8b1;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.6;
-    color: rgb(87, 96, 105);
-    letter-spacing: .03;
-    margin: 10px auto;
-    font-size: 1.5rem;
-    padding: 1% 0;
-}

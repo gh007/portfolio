@@ -2,24 +2,18 @@
 
 
 body{
-    
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
     
     
 }
 
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: proxima-nova, sans-serif;
-}
-
-
 img {
     max-width: 100%;
-    height: auto;
+    margin: 0 auto;
+    
 }
 
 
@@ -28,13 +22,7 @@ h1, h2, h3, h4, h5 {
  font-style: normal;
 } 
  
-h3 {
- text-transform:capitalize;
- font-size:1.875em;
- padding:0 0 1% 0;
- color:#001833;
- font-weight:800;
-}
+
 
 
     

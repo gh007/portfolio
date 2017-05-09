@@ -1,0 +1,33 @@
+.about-me-h3 {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #001833;
+    font-weight: 800;
+   
+    
+    
+    &--b-margin {
+       margin-top: .5em;
+        margin-bottom: .5em;
+        
+        @mixin atSmall{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.about-me-content {
+    font-family: proxima-nova, sans-serif;
+    color: #f5d8b1;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgb(87, 96, 105);
+    letter-spacing: .03;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    
+    @mixin atSmall{
+            font-size: 1.3rem;
+        }
+}

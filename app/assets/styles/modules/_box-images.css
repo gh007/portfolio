@@ -1,9 +1,18 @@
 
  
+.box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
 .box-section {
- max-width:1111px;
  margin:0 auto;
- padding:2% 0%;
+ padding:0% 0%;
 }
  
 .box-grid {
@@ -26,54 +35,44 @@
 }
  
 .box-grid li {
- width: 328px;
- height: 328px;
+ width: 290px;
+ height: 300px;
  display: inline-block;
- margin: 20px;
+ margin: 7px;
 }
 
-
-.box-grid li {
-	width: 328px;
-	height: 328px;
-	display: inline-block;
-	margin: 20px;
-}
-
-.box {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out, 
-    transform 0.3s ease-in-out, ;
-}
 
 .box:hover {
 	transform: scale(1.05); 
 }
 
-.box-grid li {
-	width: 300px;
-	height: 300px;
-	display: inline-block;
-	margin: 20px;
+
+.box-info {
+	position: absolute;
+	width: inherit;
+	height: inherit;
 }
- 
-.box {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out, 
-    transform 0.3s ease-in-out, ;
+
+.box-info h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+	color: #fff;
+	font-size: 40px;
+	margin: 0 25px;
+	padding: 100px 0 0 0;
+	line-height:1.1;
 }
- 
-.box:hover {
-	transform: scale(1.05); 
+
+.box-info p {
+    font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 16px;
+	line-height:2.3;
 }
+
+
 
 
 
@@ -117,92 +116,26 @@
     url(../images/);
 }
 
-.box-info {
-	position: absolute;
-	width: inherit;
-	height: inherit;
+.box-img-5 { 
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.10)
+    ),
+    /* bottom, image */
+    url(../images/);
 }
 
-.box-info h3 {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-	color: #fff;
-	font-size: 42px;
-	margin: 0 30px;
-	padding: 100px 0 0 0;
-	line-height:1.5;
+.box-img-6 { 
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.10)
+    ),
+    /* bottom, image */
+    url(../images/);
 }
 
-.box-info p {
-    font-family: 'Source Sans Pro', sans-serif;
-	color: #fff;
-	padding: 4px 5px;
-	margin: 0 30px;
-	font-size: 14px;
-	line-height:2;
-}
 
-.box-img-1 { 
- background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ),
-    /* bottom, image */
-    url(../);
-}
+
  
-.box-img-2 { 
- background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ),
-    /* bottom, image */
-    url(../);
-}
- 
-.box-img-3 { 
- background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ),
-    /* bottom, image */
-    url(../);
-}
- 
-.box-img-4 { 
- background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ),
-    /* bottom, image */
-    url(../);
-}
- 
-.box-info {
-	position: absolute;
-	width: inherit;
-	height: inherit;
-}
- 
-.box-info h3 {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-	color: #fff;
-	font-size: 42px;
-	margin: 0 30px;
-	padding: 100px 0 0 0;
-	line-height:1.5;
-}
- 
-.box-info p {
-    font-family: 'Source Sans Pro', sans-serif;
-	color: #fff;
-	padding: 4px 5px;
-	margin: 0 30px;
-	font-size: 14px;
-	line-height:2;
-}
