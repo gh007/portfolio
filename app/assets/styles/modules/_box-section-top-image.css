@@ -1,0 +1,23 @@
+.box-top-image{
+  background: url(../../../assets/images/code.png) no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 6em;
+        opacity: 1;
+        margin: 0 auto;
+        border-radius: 10px;
+        z-index: -3;
+    
+    @mixin atSmall {
+        height: 11em;
+    }
+    
+    @mixin atMedium {
+        height: 12em;
+    }
+}
+
+.box-top-image h2{
+    color: antiquewhite;
+}

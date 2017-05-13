@@ -3,7 +3,7 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "modules/_text-animation";
-@import "modules/_box-images";
+@import "modules/_box-content";
 @import "modules/_navbar";
 @import "modules/_header"; 
 @import "modules/_btn";
@@ -11,5 +11,7 @@
 @import "modules/_page-section";   
 @import "modules/_about-me";      
 @import "modules/_headline";      
+@import "modules/_box-section-top-image";     
+@import "modules/_footer";     
  
   

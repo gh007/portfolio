@@ -1,5 +1,5 @@
 .page-section {
-   padding: .5rem 0;
+   padding: 1.3rem 0;
     
     &--blue {
         background-color: $mainBlue;

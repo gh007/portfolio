@@ -4,21 +4,39 @@
     position: relative;
     border-bottom: 10px solid $mainCream;
     
+    
     &__laptop-image {
         background: url(../../../assets/images/laptop.jpg) no-repeat;
         background-size: cover;
         position: relative;
         width: 100%;
-        height: 30em;
+        height: 13.5em;
         margin: 0 auto;
         z-index: -2;
         background-color: firebrick;
+        
+        @mixin atSmall {
+        height: 20em;
+    }
+    @mixin atMedium {
+        
+    }
+    @mixin atLarge {
+        font-size: ;
+        top: ;
+    }
              
     }
     
+    
+    
+    
+    
+    
+    
 .intro h1 {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     text-align: center;
     color: rgba(245, 221, 187, 0.99);
     letter-spacing: 0.1rem;
@@ -28,22 +46,22 @@
     width: 100%;
     z-index: 1;
     left: 0;
-    top: 15.7em;
+    top: 5.2em;
     
     @mixin atSmall {
-        font-size: 2.4rem;
-        top: 7.1em;
+        font-size: 2.9rem;
+        top: 4.4em;
     }
     @mixin atMedium {
-        font-size: 2.9rem;
-        top: 6.1em;
+        font-size: 3.4rem;
+        top: 3.6em;
     }
     @mixin atLarge {
         font-size: 4.9rem;
-        top: 2.9em;
+        top: 2.4em;
     }
 }
-
+/*
 .intro h2 {
     position: absolute;
     width: 100%;
@@ -55,10 +73,10 @@
     text-transform: capitalize;
     margin-top: .1rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
-    top: 21.2em;
+    top: 20.2em;
     
     @mixin atSmall {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
         top: 10.7em;
     }
     @mixin atMedium {
@@ -69,7 +87,65 @@
         font-size: 3.0rem;
         top: 7.8em;
     }
+    
 }
+  */  
+
+    
+    .intro h3 {
+        position: absolute;
+        width: 100%;
+        color: rgba(245, 221, 187, 0.99);
+        font-size: 1.7rem;
+        text-align: center;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+        top: 0.5em;
+        
+        @mixin atSmall {
+        font-size: 2.8rem;
+        top: 1.7rem;;
+    }
+    @mixin atMedium {
+        font-size: 3.2rem;
+        
+    }
+    @mixin atLarge {
+        font-size: 3.8rem;
+        top: -0.8rem;
+    }
+    }
+    
+    
+  .intro h4 {
+        position: absolute;
+      width: 100%;
+        color: rgba(245, 221, 187, 0.99);
+        font-size: 1.3rem;
+        text-align: center;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+      top: 3.3em;
+      
+      @mixin atSmall {
+        font-size: 1.8rem;
+        top: 6.9rem;
+    }
+    @mixin atMedium {
+        font-size: 2.5rem;
+        top: 5.9rem;
+    }
+    @mixin atLarge {
+        font-size: 3.1rem;
+        top: 4.1rem;
+    }
+    }
+    
+    
+    
+
+    
+    
+    
+    
 }
 
 

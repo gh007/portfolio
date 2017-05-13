@@ -1,17 +1,41 @@
+.about-me-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    @mixin atSmall {}
+}
+
+.about-me-section {
+    position: relative;
+    background-color: dodgerblue;
+    
+    
+    }
+    
+    
+    .about-me-section__h2 {
+    position: absolute;
+        
+    margin: 0 auto;
+    width: 100%;
+        
+        background-color: fuchsia;
+        color: forestgreen;
+    
+    
+}
+
 .about-me-h3 {
     font-size: 1.3rem;
     text-transform: capitalize;
     color: #001833;
-    font-weight: 800;
-   
-    
-    
+    font-weight: 600;
     &--b-margin {
-       margin-top: .5em;
+        margin-top: 1em;
         margin-bottom: .5em;
-        
-        @mixin atSmall{
+        @mixin atSmall {
             font-size: 1.8rem;
+            margin-top: 2em;
         }
     }
 }
@@ -26,8 +50,7 @@
     letter-spacing: .03;
     margin: 10px auto;
     font-size: 1.1rem;
-    
-    @mixin atSmall{
-            font-size: 1.3rem;
-        }
+    @mixin atSmall {
+        font-size: 1.3rem;
+    }
 }
