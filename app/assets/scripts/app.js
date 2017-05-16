@@ -1,5 +1,3 @@
-import $ from 'jquery';
-import from "modules/Navbar.js"
+import MobMenu from './modules/MobMenu';
 
-
- 
+var mobMenu = new MobMenu();

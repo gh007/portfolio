@@ -1,23 +1,47 @@
-.box-top-image{
-  background: url(../../../assets/images/code.png) no-repeat;
-        background-size: cover;
-        position: relative;
-        width: 100%;
-        height: 6em;
-        opacity: 1;
-        margin: 0 auto;
-        border-radius: 10px;
-        z-index: -3;
+.box-top-image {
+    background: url(../../../assets/images/code.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: -3;
     
     @mixin atSmall {
-        height: 11em;
+        height: 8em;
     }
-    
     @mixin atMedium {
         height: 12em;
     }
 }
 
-.box-top-image h2{
+.box-top-image h2 {
+    display: inline-block;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2.0em;
+    border-radius: 12px;
     color: antiquewhite;
+    text-transform: capitalize;
+    background-color: rgba(18, 18, 18, 0.8);
+    
+     @mixin atSmall {
+        margin-top: 1.6em;
+         font-size: 2.5rem;
+    }
+    
+    @mixin atMedium {
+        margin-top: 2.2em;
+        font-size: 2.9rem;
+    }
+    
+    @mixin atLarge {
+        margin-top: 1.4em;
+        font-size: 3.9rem;
+         
+    }
 }

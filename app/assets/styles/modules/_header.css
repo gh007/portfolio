@@ -2,28 +2,30 @@
 
 .intro {
     position: relative;
-    border-bottom: 10px solid $mainCream;
+    
     
     
     &__laptop-image {
         background: url(../../../assets/images/laptop.jpg) no-repeat;
         background-size: cover;
-        position: relative;
+        position: absolute;
         width: 100%;
-        height: 13.5em;
+        height: 12.5em;
         margin: 0 auto;
-        z-index: -2;
-        background-color: firebrick;
+        z-index: -55;
+        border-bottom: 10px solid $mainCream;
         
         @mixin atSmall {
         height: 20em;
+            height: 20.5em;
     }
     @mixin atMedium {
-        
+        height: 25.5em;
     }
     @mixin atLarge {
         font-size: ;
         top: ;
+        height: 30.5em;
     }
              
     }
@@ -47,6 +49,7 @@
     z-index: 1;
     left: 0;
     top: 5.2em;
+    padding-top: 60px;
     
     @mixin atSmall {
         font-size: 2.9rem;
@@ -61,35 +64,6 @@
         top: 2.4em;
     }
 }
-/*
-.intro h2 {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    font-size: 1.0rem;
-    text-align: center;
-    color: rgba(245, 221, 187, 0.99);
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-top: .1rem;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
-    top: 20.2em;
-    
-    @mixin atSmall {
-        font-size: 1.2rem;
-        top: 10.7em;
-    }
-    @mixin atMedium {
-        font-size: 2.5rem;
-        top: 9.7em;
-    }
-    @mixin atLarge {
-        font-size: 3.0rem;
-        top: 7.8em;
-    }
-    
-}
-  */  
 
     
     .intro h3 {
@@ -100,6 +74,7 @@
         text-align: center;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
         top: 0.5em;
+        padding-top: 60px;
         
         @mixin atSmall {
         font-size: 2.8rem;
@@ -124,6 +99,7 @@
         text-align: center;
       text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
       top: 3.3em;
+      padding-top: 60px;
       
       @mixin atSmall {
         font-size: 1.8rem;

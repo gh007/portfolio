@@ -13,7 +13,7 @@
 }
 
 .box-grid {
-    margin: 20px 0 0 0;
+    margin: 1.2em 0 0 0;
     padding: 0;
     list-style: none;
     display: block;
@@ -32,27 +32,39 @@
 }
 
 .box-grid li {
-    width: 235px;
+    width: 222px;
     height: 300px;
     display: inline-block;
     margin: 7px;
     
     @mixin atMedium {
-        width: 280px;
+        width: 270px;
         height: 300px;
-        margin: 18px 18px;
+        margin: 1.1em 1.1em;
         padding: 50 50px;
     }
 }
 
 .box:hover {
     transform: scale(1.05);
+    opacity: .8;
+    
+}
+
+.box:hover h3 {
+    opacity: 0;
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
+}
+
+.box:hover p {
+    opacity: 0;
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
 }
 
 .box-info {
     position: relative;
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     
     
        
@@ -67,8 +79,8 @@
     font-weight: 400;
     color: #fff;
     font-size: 30px;
-    padding: 100px 0 0 0;
-    line-height: 1.1;
+    padding: 70px 0 0 0;
+    line-height: .5;
     
     
 }
@@ -76,16 +88,16 @@
 .box-info p {
     font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
-    padding: 4px 5px;
-    margin: 0 30px;
-    font-size: 16px;
-    line-height: 2.3;
+    padding: 5px 0px;
+    margin: 10 10px;
+    font-size: 1rem;
+    line-height: 1.5;
     
 }
 
 .box-img-1 {
     background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../images/);
+    url(../../../assets/images/Travel-site-pic-small.png);
 }
 
 .box-img-2 {
