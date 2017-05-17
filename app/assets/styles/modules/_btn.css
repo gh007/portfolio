@@ -1,15 +1,15 @@
 $mainCream: #f5d8b1;
 
 .btn {
-background-color: $mainCream;
+background-color: $mainOrange;
     color: #fff;
     text-decoration: none;
     padding: .75rem 1.2rem;
     display: inline-block;
     
     
-    &--orange {
-        background-color: $mainOrange;
+    &--cream {
+        background-color: $mainCream;
         
     }
     

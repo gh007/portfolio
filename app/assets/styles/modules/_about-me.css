@@ -10,7 +10,7 @@
     }
     
     @mixin atMedium {
-        margin-top: 27em;
+        margin-top: 29em;
         border: 9px solid $mainCream;
     }
     

@@ -2,19 +2,31 @@
     position: absolute;
     padding: 10px 0;
     width: 100%;
-    z-index: 6;
+    z-index: 7;
     transition: background-color .5s ease-out;
+    
+    @mixin atMedium {
+        position: fixed;
+        background-color: rgba(245, 216, 177, .4);
+        
+        &--dark {
+           background-color: rgba(142, 112, 71, 0.8) 
+        }
+    }
+    
     &--is-expanded {
         background-color: rgba(245, 216, 177, .55);
     }
-    @mixin atMedium {
-        background-color: rgba(245, 216, 177, .4);
-    }
+    
+    
     &__btn-container {
+        
         @mixin atMedium {
-            float: right;
+            float: left;
+            
         }
     }
+    
     &__nav-3line-icon {
         position: absolute;
         z-index: 11;
@@ -83,18 +95,20 @@
         transition: all .5s ease-out;
         position: relative;
         z-index: -10;
-        padding-top: 49px;
-        padding-bottom: 49px;
+        padding-top: 43px;
+        padding-bottom: 43px;
         text-align: center;
+        
         @mixin atSmall {
-            padding-top: 104px;
-            padding-bottom: 104px;
+            padding-top: 101px;
+            padding-bottom: 101px;
         }
+        
         @mixin atMedium {
             opacity: 1;
             z-index: 1;
             padding: 0;
-            transform: (1);
+            transform: scale(1);
         }
         &--is-visible {
             opacity: 1;
