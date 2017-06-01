@@ -5,6 +5,7 @@
     z-index: 7;
     transition: background-color .5s ease-out;
     
+    
     @mixin atMedium {
         position: fixed;
         background-color: rgba(245, 216, 177, .4);
@@ -15,7 +16,7 @@
     }
     
     &--is-expanded {
-        background-color: rgba(245, 216, 177, .55);
+        background-color: rgba(0, 0, 0, .6);
     }
     
     
@@ -102,6 +103,7 @@
         @mixin atSmall {
             padding-top: 101px;
             padding-bottom: 101px;
+            
         }
         
         @mixin atMedium {

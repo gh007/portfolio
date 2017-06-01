@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10333,6 +10333,58 @@ return jQuery;
 "use strict";
 
 
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)('textarea').blur(function () {
+  (0, _jquery2.default)('#hire textarea').each(function () {
+    $this = (0, _jquery2.default)(this);
+    if (this.value != '') {
+      $this.addClass('focused');
+      (0, _jquery2.default)('textarea + label + span').css({ 'opacity': 1 });
+    } else {
+      $this.removeClass('focused');
+      (0, _jquery2.default)('textarea + label + span').css({ 'opacity': 0 });
+    }
+  });
+});
+
+(0, _jquery2.default)('#hire .field:first-child input').blur(function () {
+  (0, _jquery2.default)('#hire .field:first-child input').each(function () {
+    $this = (0, _jquery2.default)(this);
+    if (this.value != '') {
+      $this.addClass('focused');
+      (0, _jquery2.default)('.field:first-child input + label + span').css({ 'opacity': 1 });
+    } else {
+      $this.removeClass('focused');
+      (0, _jquery2.default)('.field:first-child input + label + span').css({ 'opacity': 0 });
+    }
+  });
+});
+
+(0, _jquery2.default)('#hire .field:nth-child(2) input').blur(function () {
+  (0, _jquery2.default)('#hire .field:nth-child(2) input').each(function () {
+    $this = (0, _jquery2.default)(this);
+    if (this.value != '') {
+      $this.addClass('focused');
+      (0, _jquery2.default)('.field:nth-child(2) input + label + span').css({ 'opacity': 1 });
+    } else {
+      $this.removeClass('focused');
+      (0, _jquery2.default)('.field:nth-child(2) input + label + span').css({ 'opacity': 0 });
+    }
+  });
+});
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -10377,7 +10429,7 @@ var MobMenu = function () {
 exports.default = MobMenu;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10393,7 +10445,72 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _noframework = __webpack_require__(4);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Modal = function () {
+    function Modal() {
+        _classCallCheck(this, Modal);
+
+        this.openModalButton = (0, _jquery2.default)(".open-modal");
+        this.modal = (0, _jquery2.default)(".modal");
+        this.closeModalButton = (0, _jquery2.default)(".modal__close");
+        this.events();
+    }
+
+    _createClass(Modal, [{
+        key: "events",
+        value: function events() {
+            this.openModalButton.click(this.openModal.bind(this));
+
+            this.closeModalButton.click(this.closeModal.bind(this));
+
+            (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+        }
+    }, {
+        key: "keyPressHandler",
+        value: function keyPressHandler(e) {
+            if (e.keyCode == 27) {
+                this.closeModal();
+            }
+        }
+    }, {
+        key: "openModal",
+        value: function openModal() {
+            this.modal.addClass("modal--is-visible");
+            return false;
+        }
+    }, {
+        key: "closeModal",
+        value: function closeModal() {
+            this.modal.removeClass("modal--is-visible");
+        }
+    }]);
+
+    return Modal;
+}();
+
+exports.default = Modal;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(6);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
@@ -10433,7 +10550,7 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 3 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10443,21 +10560,31 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _MobMenu = __webpack_require__(1);
+var _MobMenu = __webpack_require__(2);
 
 var _MobMenu2 = _interopRequireDefault(_MobMenu);
 
-var _StickyHeader = __webpack_require__(2);
+var _StickyHeader = __webpack_require__(4);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
+
+var _Modal = __webpack_require__(3);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _Form = __webpack_require__(1);
+
+var _Form2 = _interopRequireDefault(_Form);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobMenu = new _MobMenu2.default();
 var stickyHeader = new _StickyHeader2.default();
+var modal = new _Modal2.default();
+var form = new Form();
 
 /***/ }),
-/* 4 */
+/* 6 */
 /***/ (function(module, exports) {
 
 /*!

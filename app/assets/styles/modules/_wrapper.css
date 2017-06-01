@@ -4,5 +4,9 @@
     font-family: proxima-nova, sans-serif;
     padding-left: 18px;
     padding-right: 18px;
+    
+    &--narrow {
+        max-width: 400px;
+    }
    
 }

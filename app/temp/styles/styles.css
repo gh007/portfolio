@@ -653,7 +653,7 @@ to {
 }
 
 .intro {
-    position: relative;   
+    position: relative;
 }
 
 .intro__laptop-image {
@@ -670,7 +670,6 @@ to {
 @media (min-width: 440px) {
 
   .intro__laptop-image {
-    height: 20em;
     height: 20.5em;
   }
 }
@@ -694,7 +693,7 @@ to {
   font-size: 1.7rem;
   text-align: center;
   color: rgba(245, 221, 187, 0.99);
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   font-weight: 900;
   line-height: .1rem;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, .5);
@@ -717,7 +716,7 @@ to {
 
   .intro .intro-h1 {
     font-size: 3.4rem;
-    top: 3.9em;
+    top: 3.6em;
   }
 }
 
@@ -821,6 +820,10 @@ background-color: #ffa12f;
     padding-left: 18px;
     padding-right: 18px;
    
+}
+
+.wrapper--narrow {
+  max-width: 400px;
 }
 
 .page-section {
@@ -1063,7 +1066,7 @@ background-color: #ffa12f;
 }
 
 .site-header--is-expanded {
-  background-color: rgba(245, 216, 177, .55);
+  background-color: rgba(0, 0, 0, .6);
 }
 
 @media (min-width: 790px) {
@@ -1270,6 +1273,222 @@ background-color: #ffa12f;
   .primary-nav a.is-current-link {
     color: rgba(201, 116, 0, 0.9);
   }
+}
+
+.modal {
+    position: fixed;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    transition: all .5s ease-out;
+}
+
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  -webkit-transform: scaleX(1.3);
+          transform: scaleX(1.3);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  color: #b11111;
+}
+
+@media (min-width: 440px) {
+
+  .modal__close {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 790px) {
+
+  .modal__close {
+    font-size: 1.8rem;
+  }
+}
+
+.modal__close:hover {
+  color: #ffa12f;
+  cursor: pointer;
+}
+
+.modal-form {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 30em;
+    font-size: 50%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+    background: #efefef;
+    color: #B6B6B6;
+    width: 90%;
+}
+
+@media (min-width: 440px) {
+
+  .modal-form {
+    top: 33em;
+    width: 70%;
+  }
+}
+
+@media (min-width: 790px) {
+
+  .modal-form {
+    top: 32em;
+    width: 60%;
+  }
+}
+
+.modal-form section {
+  background: white;
+  margin: 0 auto;
+  border-top: 45px solid #313A3D;
+  text-align: center;
+  padding: 20px 0 40px;
+  width: 100%;
+}
+
+.modal-form h1 {
+  margin-bottom: 40px;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #313A3D;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  transition: all 333ms ease-in-out;
+}
+
+form .field label + span {
+  font-family: 'SSStandard';
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  transition: all 333ms ease-in-out;
+}
+
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: #E8E9EA;
+  width: 80.5%;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 18px;
+  resize: none;
+  transition: all 333ms ease-in-out;
+}
+
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 150px;
+}
+
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #FD9638;
+  color: #313A3D;
+}
+
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #FD9638;
+}
+
+form .field:hover label {
+  width: 18%;
+  background: #313A3D;
+  color: white;
+}
+
+form input[type="submit"] {
+  background: #FD9638;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  transition: all 333ms ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background: #313A3D;
+  color: #FD9638;
+}
+
+form input[type="submit"]:focus {
+  outline: none;
+  background: #cd6302;
 }      
  
   
