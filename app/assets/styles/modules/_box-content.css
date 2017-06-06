@@ -52,12 +52,12 @@
 }
 
 .box:hover h3 {
-    opacity: 0;
+    opacity: .4;
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
 }
 
 .box:hover p {
-    opacity: 0;
+    opacity: .3;
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, ;
 }
 
@@ -97,7 +97,7 @@
 
 .box-img-1 {
     background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../../assets/images/Travel-site-pic-small.png);
+    url(../../images/Travel-site-pic-small.png);
 }
 
 .box-img-2 {

@@ -575,14 +575,14 @@ to {
 }
 
 .box:hover h3 {
-    opacity: 0;
+    opacity: .4;
     transition: all 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .box:hover p {
-    opacity: 0;
+    opacity: .3;
     transition: all 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -624,7 +624,7 @@ to {
 
 .box-img-1 {
     background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../../assets/images/Travel-site-pic-small.png);
+    url(../../images/Travel-site-pic-small.png);
 }
 
 .box-img-2 {
@@ -657,7 +657,7 @@ to {
 }
 
 .intro__laptop-image {
-  background: url(../../../assets/images/laptop.jpg) no-repeat;
+  background: url(../../images/laptop.jpg) no-repeat;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -948,7 +948,7 @@ background-color: #ffa12f;
 }
 
 .box-top-image {
-    background: url(../images/code.png) no-repeat;
+    background: url(../../images/code.png) no-repeat;
     background-size: cover;
     position: relative;
     width: 100%;
