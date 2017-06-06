@@ -72,3 +72,7 @@
         font-size: 1.3rem;
     }
 }
+
+.about-me-ul li {
+    margin-bottom: 1rem;
+}

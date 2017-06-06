@@ -943,6 +943,10 @@ background-color: #ffa12f;
   }
 }
 
+.about-me-ul li {
+    margin-bottom: 1rem;
+}
+
 .box-top-image {
     background: url(../../../assets/images/code.png) no-repeat;
     background-size: cover;
@@ -1489,6 +1493,19 @@ form input[type="submit"]:hover {
 form input[type="submit"]:focus {
   outline: none;
   background: #cd6302;
+}
+
+#hire a {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 440px) {
+
+  #hire a {
+    font-size: 1.6rem;
+  }
 }      
  
   
