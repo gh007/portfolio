@@ -657,7 +657,7 @@ to {
 }
 
 .intro__laptop-image {
-  background: url(../../images/laptop.jpg) no-repeat;
+  background: url(laptop.jpg) no-repeat;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -948,7 +948,7 @@ background-color: #ffa12f;
 }
 
 .box-top-image {
-    background: url(../../images/code.png) no-repeat;
+    background: url(code.png) no-repeat;
     background-size: cover;
     position: relative;
     width: 100%;
